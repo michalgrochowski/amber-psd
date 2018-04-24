@@ -1,13 +1,7 @@
 // Nav
 
 .nav {
-  @include flex-center-row;
-  width: 100vw;
-  max-width: 100vw;
-  height: 3rem;
-  position: fixed;
-  top: 0;
-  left: 0;
+  height: 7rem;
   z-index: 10;
   background-color: #ffffff;
   @include mq-max(850px) {
@@ -16,18 +10,13 @@
 }
 
 .nav__logo {
-  width: 15rem;
   border-bottom: none;
-  margin: 1rem 0 0 1.5rem;
-  @include mq-max(850px) {
-    width: 12rem;
-  }
 }
 
 .nav__list {
   @include flex-center-row;
-  padding: 3rem 0 0 0;
   list-style: none;
+  padding: 0;
   @include mq-max(850px) {
     @include flex-center-column;
     position: fixed;
@@ -48,13 +37,12 @@
 }
 
 .nav__item {
-  font-size: 2rem;
+  font-size: 1.4rem;
   display: block;
-  padding: 1rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  margin: 0 3rem;
-  @include flex-center-row;
+  flex: 1;
+  padding: 0.5rem 1rem;
   @include mq-max(767px) {
     width: 100vw;
     font-size: 2.2rem;
@@ -63,48 +51,19 @@
     padding: 1rem 0 1rem 0;
     margin: 0 1rem;
   }
-  @include mq-minmax(768px,950px) {
-    margin: 0 1rem;
-  }
-  @include mq-minmax(951px,1200px) {
-    margin: 0 2rem;
-  }
-  &--controls {
-    @include mq-max(850px) {
-      @include flex-center-column;
-    }
-    @include mq-min(851px) {
-      position: fixed;
-      right: 4rem;
-      top: 2.5rem;
-    }
-  }
-}
-
-.nav__item-box {
-  @include mq-max(850px) {
-    margin: 0rem 0 2.5rem 0;
-  }
-  @include mq-min(851px) {
-    margin: 0 5rem 0 0;
-  }
 }
 
 .nav__link {
   text-decoration: none;
-  z-index: 5;
+  text-transform: uppercase;
   &--start {
-    position: fixed;
-    top: 2rem;
-    left: 3rem;
-    z-index: 5;
     @include mq-max(850px) {
+      position: fixed;
       top: 0.5rem;
       left: 1rem;
     }
   }
 }
-
 
 .nav__hamburger, .nav__close-menu {
   position: fixed;

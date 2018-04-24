@@ -1,4 +1,6 @@
+@import 'variables.scss';
 @import 'mixins.scss';
+@import 'grid.scss';
 
 // Main Styles
 
@@ -12,6 +14,8 @@ body {
   box-sizing: border-box;
   font-size: 1.6rem;
   color: #333;
+  width: 100vw;
+  @include flex-center-column;
 }
 
 // Main layout

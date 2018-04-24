@@ -12,6 +12,6 @@ Technologies used:
 
 Design - https://stylemixthemes.com/freebies/amber-free-psd/
 
-Live - https://michalgrochowski.github.io/amber-psd/
+Live - https://michalgrochowski.github.io/amber-psd/app
 
 License: MIT
