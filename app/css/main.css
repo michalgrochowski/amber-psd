@@ -204,41 +204,6 @@ body {
 .nav__link {
   text-decoration: none;
   z-index: 5; }
-  @media screen and (min-width: 851px) {
-    .nav__link {
-      position: relative; }
-      .nav__link::before {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 100%;
-        right: 50%;
-        -webkit-transform: tranlateX(50%);
-        transform: tranlateX(50%);
-        height: 2px;
-        width: 0;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
-      .nav__link::after {
-        content: "";
-        position: absolute;
-        display: block;
-        top: 100%;
-        left: 50%;
-        -webkit-transform: tranlateX(-50%);
-        transform: tranlateX(-50%);
-        height: 2px;
-        width: 0;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
-      .nav__link:hover::before, .nav__link:focus::before {
-        width: 55%;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; }
-      .nav__link:hover::after, .nav__link:focus::after {
-        width: 55%;
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s; } }
   .nav__link--start {
     position: fixed;
     top: 2rem;
