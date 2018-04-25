@@ -350,8 +350,16 @@
   width: 100%; }
   .section--hero {
     height: 100vh;
-    background-color: gray; }
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(10, 10, 10, 0.8)), to(rgba(10, 10, 10, 0.8))), url("../img/mountains.jpg");
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), url("../img/mountains.jpg");
+    background-size: auto auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .section--steal {
+    height: 40rem; }
   .section--latest-works {
+    height: 75rem;
     background-color: gray;
     color: #ffffff; }
   .section--purchase {
@@ -359,7 +367,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    background-color: cyan;
+    background-color: #02baab;
     color: #ffffff; }
 
 .section__title {
@@ -371,7 +379,7 @@
   .section__title--hero {
     font-size: 6rem;
     margin: 0.5rem 0;
-    color: cyan; }
+    color: #02baab; }
   .section__title--purchase {
     -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
@@ -403,28 +411,37 @@
     background-color: #ffffff; }
 
 .button {
-  border: 3px solid cyan;
-  color: cyan;
+  border: 3px solid #02baab;
+  color: #02baab;
   background: transparent;
   cursor: pointer;
-  width: 15rem;
-  padding: 0.5rem 1.5rem;
-  margin: 0 1rem; }
+  width: 13.5rem;
+  height: 4.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0 1.5rem;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
   .button:hover {
-    background: cyan;
-    color: #ffffff; }
+    background: #02baab;
+    color: #ffffff;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all; }
   .button--full {
-    background: cyan;
+    background: #02baab;
     color: #ffffff; }
     .button--full:hover {
-      color: cyan;
-      background: transparent; }
+      color: #02baab;
+      background: transparent;
+      -webkit-transition: 0.3s all;
+      transition: 0.3s all; }
   .button--white {
     border: 3px solid #ffffff;
     color: #ffffff; }
     .button--white:hover {
-      color: cyan;
-      background: #ffffff; }
+      color: #02baab;
+      background: #ffffff;
+      -webkit-transition: 0.3s all;
+      transition: 0.3s all; }
 
 .work-box {
   height: 25rem;
@@ -455,7 +472,7 @@
 .work-box__text {
   font-size: 1.2rem;
   margin: 0;
-  color: cyan; }
+  color: #02baab; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -568,7 +585,9 @@ body {
   -ms-flex-positive: 0;
   flex-grow: 0;
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
   @media screen and (max-width: 850px) {
     .nav__list {
       display: -webkit-box;
@@ -616,7 +635,8 @@ body {
   flex: 1;
   width: 0;
   text-align: center;
-  border-top: 10px solid red; }
+  border-top: 10px solid red;
+  height: 100%; }
   @media screen and (max-width: 767px) {
     .nav__item {
       width: 100vw;
@@ -624,18 +644,52 @@ body {
       z-index: 4;
       padding: 1rem 0 1rem 0;
       margin: 0 1rem; } }
+  .nav__item--home {
+    border-top: 10px solid #ffae00; }
   .nav__item--typography {
-    border-top: 10px solid green; }
+    border-top: 10px solid #fc7100; }
+  .nav__item--blog {
+    border-top: 10px solid #e51c5e; }
+  .nav__item--pages {
+    border-top: 10px solid #ae0f8d; }
+  .nav__item--elements {
+    border-top: 10px solid #6d0fae; }
+  .nav__item--commerce {
+    border-top: 10px solid #33227a; }
+  .nav__item--mega {
+    border-top: 10px solid #0c8fcc; }
 
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #cccccc; }
-  @media screen and (max-width: 850px) {
-    .nav__link--start {
-      position: fixed;
-      top: 0.5rem;
-      left: 1rem; } }
+  color: #cccccc;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0; }
+  .nav__link--start {
+    margin-top: 0;
+    margin-bottom: 0; }
+    @media screen and (max-width: 850px) {
+      .nav__link--start {
+        position: fixed;
+        top: 0.5rem;
+        left: 1rem; } }
 
 .nav__hamburger, .nav__close-menu {
   position: fixed;
