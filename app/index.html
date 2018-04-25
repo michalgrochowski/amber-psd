@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Add a Google Font of choice or remove this -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/..."> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<!-- Add new css files here so gulp-useref can bundle them in one file -->
 	<!--build:css css/main.min.css -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -35,61 +35,216 @@
 	<link rel="manifest" href="/manifest.json">
 </head>
 <body id="body" class=""> 
-	<header class="grid header">
-		<nav class="row nav">
-			<ul class="col-xl-12 nav__list nav__list--upper">
-				<li class="col-xl-3">
-					<input class="" type="search" placehodler="Search">
-				</li>
-				<li class="col-xl-offset-7 col-xl-1">Login</li>
-				<li class="col-xl-1">Register</li>
-			</ul>
-			<a class="col-xl-3 nav__link nav__link--start" href="#" title="">
-				<img class="nav__logo" src="img/logo.png" alt="">
-			</a>
-			<ul class="col-xl-9 nav__list">
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">Home</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">Typography</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">Blog</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">Pages</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">Elements</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">E-commerce</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link" href="#" title="">Other</a>
-				</li>
-			</ul>
-			<button class="nav__hamburger" aria-label="" title="">open</button>
-			<button class="nav__close-menu" aria-label="" title="">close</button>
-		</nav>
+	<header class="header">
+		<div class="grid">
+			<nav class="row nav">
+				<a class="col-xl-3 nav__link nav__link--start" href="#" title="">
+					<img class="nav__logo" src="img/logo.png" alt="">
+				</a>
+				<ul class="col-xl-9 nav__list">
+					<li class="nav__item nav__item--home">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+					<li class="nav__item nav__item--typography">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#" title="">Home</a>
+					</li>
+				</ul>
+				<button class="nav__hamburger" aria-label="" title="">open</button>
+				<button class="nav__close-menu" aria-label="" title="">close</button>
+			</nav>
+		</div>
 	</header>
 	<main class="container">
-		<h1 class="container__title">Main title</h1>
-		<section id="" class="section">  
-			<h2 class="section__title">Section 1</h2>
-			
-		</section>   
-		<section id="" class="section">  
-			<h2 class="section__title">Section 2</h2>
-			
-		</section> 
-		<section id="" class="section">  
-			<h2 class="section__title">Section 3</h2>
-				
+		<section id="" class="section section--hero">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h1 class="section__title section__title--hero">Creating a unique look</h2>
+						<p class="section__subtitle section__subtitle--hero">Never been easier</p>
+						<div class="">
+							<button class="button button--full">See features</button>
+							<button class="button">Purchase now</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<footer id="footer" class="footer">
-
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Steal of the month</h2>
+						<span class="section__span section__span--dark"></span>
+						<p class="section__text">That we can tuck in our children at night and know that they are fed and safe from harm. our trials and triumphs became at once unique and universal.</p>
+						<button class="button">Purchase now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section section--latest-works">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Latest work</h2>
+						<span class="section__span section__span--light"></span>
+						<p class="section__text">That we can tuck in our children at night and know that they are fed and safe from harm. our trials and triumphs became at once unique and universal.</p>
+						<div class="row">
+							<div class="col-xl-4">
+								1
+							</div>
+							<div class="col-xl-4">
+								2
+							</div>
+							<div class="col-xl-4">
+								3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Amber is the most metrolly WordPress theme ever created</h2>
+						<button class="">Purchase now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Superb features</h2>
+						<div class="row">
+							<div class="col-xl-6">
+								1
+							</div>
+							<div class="col-xl-6">
+								2
+							</div>
+							<div class="col-xl-6">
+								3
+							</div>
+							<div class="col-xl-6">
+								4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Amber is the most metrolly WordPress theme ever created</h2>
+						<button class="">Purchase now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Latest blog posts</h2>
+						<span class=""></span>
+						<div class="row">
+							<div class="col-xl-4">
+								1
+							</div>
+							<div class="col-xl-4">
+								2
+							</div>
+							<div class="col-xl-4">
+								3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Company experience</h2>
+						<span class=""></span>
+						<div class="row">
+							<div class="col-xl-4">
+								1
+							</div>
+							<div class="col-xl-4">
+								2
+							</div>
+							<div class="col-xl-4">
+								3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="" class="section">  
+			<div class="grid">
+				<div class="row">
+					<div class="col-xl-12">
+						<h2 class="section__title">Our team</h2>
+						<div class="row">
+							<div class="col-xl-3">
+								1
+							</div>
+							<div class="col-xl-3">
+								2
+							</div>
+							<div class="col-xl-3">
+								3
+							</div>
+							<div class="col-xl-3">
+								4
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="grid footer">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="row">
+						<div class="col-xl-3">
+							1
+						</div>
+						<div class="col-xl-3">
+							2
+						</div>
+						<div class="col-xl-3">
+							3
+						</div>
+						<div class="col-xl-3">
+							4
+						</div>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

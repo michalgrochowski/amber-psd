@@ -1,0 +1,52 @@
+.section {
+  background-color: #ffffff;
+  @include flex-center-row;
+  flex-wrap: wrap;
+  width: 100%;
+  &--hero {
+    height: 100vh;
+    background-color: gray;
+  }
+  &--latest-works {
+    background-color: gray;
+    color: #ffffff;
+  }
+}
+
+.section__title {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: normal;
+  font-size: 3.2rem;
+  &--hero {
+    font-size: 6rem;
+    margin: 0.5rem 0;
+    color: cyan;
+  }
+}
+
+.section__subtitle {
+  flex-basis: 100%;
+  text-align: center;
+  &--hero {
+    font-size: 5rem;
+    margin: 0.5rem 0 3rem 0;
+  }
+}
+
+.section__text {
+  text-align: center;
+  padding: 1rem 5rem;
+}
+
+.section__span {
+  display: block;
+  height: 0.5rem;
+  width: 4rem;
+  &--dark {
+    background-color: gray;
+  }
+  &--light {
+    background-color: #ffffff;
+  }
+}

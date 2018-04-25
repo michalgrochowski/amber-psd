@@ -1,0 +1,21 @@
+.button {
+  border: 3px solid cyan;
+  color: cyan;
+  background: transparent;
+  cursor: pointer;
+  width: 15rem;
+  padding: 0.5rem 1.5rem;
+  margin: 0 1rem;
+  &:hover {
+    background: cyan;
+    color: #ffffff;
+  }
+  &--full {
+    background: cyan;
+    color: #ffffff;
+    &:hover {
+      color: cyan;
+      background: transparent;
+    }
+  }
+}

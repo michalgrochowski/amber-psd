@@ -1,9 +1,14 @@
+.header {
+  width: 100%;
+  background-color: black;
+  @include flex-center-row;
+}
+
 // Nav
 
 .nav {
   height: 7rem;
   z-index: 10;
-  background-color: #ffffff;
   @include mq-max(850px) {
       height: 5rem;
   }
@@ -37,25 +42,31 @@
 }
 
 .nav__item {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   display: block;
   font-weight: bold;
   letter-spacing: 0.2rem;
-  flex: 1;
   padding: 0.5rem 1rem;
+  flex: 1;
+  width: 0;
+  text-align: center;
+  border-top: 10px solid red;
   @include mq-max(767px) {
     width: 100vw;
-    font-size: 2.2rem;
     text-align: center;
     z-index: 4;
     padding: 1rem 0 1rem 0;
     margin: 0 1rem;
+  }
+  &--typography {
+    border-top: 10px solid green;
   }
 }
 
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
+  color: #cccccc;
   &--start {
     @include mq-max(850px) {
       position: fixed;
