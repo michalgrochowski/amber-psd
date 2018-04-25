@@ -614,6 +614,73 @@
   -ms-flex-positive: 0;
   flex-grow: 0; }
 
+.footer {
+  width: 100%;
+  background-color: #1f2a32;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  padding: 0 0 7rem 0; }
+
+.footer-column {
+  width: 25%;
+  padding: 0 1.5rem; }
+  .footer-column--touch {
+    border-top: 1.5rem solid #7827a9; }
+  .footer-column--tweets {
+    border-top: 1.5rem solid #0c8fcc; }
+  .footer-column--follow {
+    border-top: 1.5rem solid #de1c5c; }
+  .footer-column--popular {
+    border-top: 1.5rem solid #ffae00; }
+
+.footer-column__box {
+  position: relative;
+  padding: 0 0 0 2.5rem; }
+
+.footer-column__title {
+  font-weight: normal;
+  font-size: 3rem;
+  color: #cccccc; }
+
+.footer-column__text {
+  color: #bebebe;
+  font-size: 1.4rem; }
+
+.footer-column__alt-text {
+  color: #ffffff;
+  font-size: 1.4rem; }
+
+.footer-column__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #02baab;
+  font-size: 1.4rem; }
+
+.footer-column__map {
+  width: 100%;
+  background-color: #ffffff;
+  height: 10rem; }
+
+.row--footer {
+  padding: 0 3rem; }
+
 .button {
   border: 3px solid #02baab;
   color: #02baab;

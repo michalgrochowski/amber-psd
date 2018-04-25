@@ -1,0 +1,62 @@
+.footer {
+  width: 100%;
+  background-color: rgb(31,42,50);
+  @include flex-center-row;
+  padding: 0 0 7rem 0;
+}
+
+.footer-column {
+  width: 25%;
+  padding: 0 1.5rem;
+  &--touch {
+    border-top: 1.5rem solid rgb(120,39,169);
+  }
+  &--tweets {
+    border-top: 1.5rem solid rgb(12,143,204);
+  }
+  &--follow {
+    border-top: 1.5rem solid rgb(222,28,92);
+  }
+  &--popular {
+    border-top: 1.5rem solid rgb(255,174,0);
+  }
+}
+
+.footer-column__box {
+  position: relative;
+  padding: 0 0 0 2.5rem;
+}
+
+.footer-column__title {
+  font-weight: normal;
+  font-size: 3rem;
+  color: #cccccc;
+}
+
+.footer-column__text {
+  color: #bebebe;
+  font-size: 1.4rem;
+}
+
+.footer-column__alt-text {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.footer-column__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(2, 186, 171);
+  font-size: 1.4rem;
+}
+
+.footer-column__map {
+  width: 100%;
+  background-color: #ffffff;
+  height: 10rem;
+}
+
+.row--footer {
+  padding: 0 3rem;
+}

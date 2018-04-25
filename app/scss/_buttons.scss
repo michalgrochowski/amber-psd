@@ -1,6 +1,6 @@
 .button {
   border: 3px solid rgb(2, 186, 171);
-  color: rgb(2, 186, 171);;
+  color: rgb(2, 186, 171);
   background: transparent;
   cursor: pointer;
   width: 13.5rem;
@@ -9,15 +9,15 @@
   margin: 0 1.5rem;
   transition: 0.3s all;
   &:hover {
-    background: rgb(2, 186, 171);;
+    background: rgb(2, 186, 171);
     color: #ffffff;
     transition: 0.3s all;
   }
   &--full {
-    background: rgb(2, 186, 171);;
+    background: rgb(2, 186, 171);
     color: #ffffff;
     &:hover {
-      color: rgb(2, 186, 171);;
+      color: rgb(2, 186, 171);
       background: transparent;
       transition: 0.3s all;
     }
@@ -26,7 +26,7 @@
     border: 3px solid #ffffff;
     color: #ffffff;
     &:hover {
-      color: rgb(2, 186, 171);;
+      color: rgb(2, 186, 171);
       background: #ffffff;
       transition: 0.3s all;
     }
