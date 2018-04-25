@@ -3,8 +3,13 @@
 @import 'grid.scss';
 @import 'section.scss';
 @import 'buttons.scss';
+@import 'work-box.scss';
 
 // Main Styles
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 10px;

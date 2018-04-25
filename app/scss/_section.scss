@@ -11,10 +11,14 @@
     background-color: gray;
     color: #ffffff;
   }
+  &--purchase {
+    flex-direction: row;
+    background-color: cyan;
+    color: #ffffff;
+  }
 }
 
 .section__title {
-  flex-basis: 100%;
   text-align: center;
   font-weight: normal;
   font-size: 3.2rem;
@@ -22,6 +26,9 @@
     font-size: 6rem;
     margin: 0.5rem 0;
     color: cyan;
+  }
+  &--purchase {
+    flex-basis: 50%;
   }
 }
 
