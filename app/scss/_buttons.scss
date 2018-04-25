@@ -18,4 +18,12 @@
       background: transparent;
     }
   }
+  &--white {
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    &:hover {
+      color: cyan;
+      background: #ffffff;
+    }
+  }
 }

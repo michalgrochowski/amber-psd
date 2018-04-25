@@ -41,6 +41,12 @@ body {
 
 @import 'nav.scss';
 
+// utilities
+
+.flex-row {
+  flex-direction: row;
+}
+
 // Misc items
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
