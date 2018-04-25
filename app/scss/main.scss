@@ -4,6 +4,7 @@
 @import 'section.scss';
 @import 'buttons.scss';
 @import 'work-box.scss';
+@import 'blog-post.scss';
 
 // Main Styles
 
@@ -34,7 +35,6 @@ body {
 
 .container__title {
   color: #333333;
-  margin-top: 5rem;
 }
 
 // Components
@@ -45,6 +45,12 @@ body {
 
 .flex-row {
   flex-direction: row;
+}
+
+.responsive-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 // Misc items

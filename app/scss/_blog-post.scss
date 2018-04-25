@@ -1,0 +1,30 @@
+.blog-post {
+  position: relative;
+  padding: 0;
+  border-bottom: 2px solid #868686;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+
+.blog-post__title {
+  color: rgb(2, 186, 171);
+}
+
+.blog-post__text {
+  margin: 0;
+}
+
+.blog-post__more {
+  color: rgb(2, 186, 171);
+  margin: 1rem 0;
+}
+
+.blog-post__comments {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+}
+
+.blog-post__icon {
+  color: rgb(2, 186, 171);
+}

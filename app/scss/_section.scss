@@ -17,8 +17,24 @@
     color: #ffffff;
   }
   &--purchase {
+    height: 13rem;
     flex-direction: row;
-    background-color: rgb(2, 186, 171);;
+    background-color: rgb(2, 186, 171);
+    color: #ffffff;
+  }
+  &--quote {
+    height: 45rem;
+    background-color: gray;
+    color: #ffffff;
+    background: linear-gradient(0deg, rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url("../img/mountains2.jpg");
+    @include bg-cover;
+  }
+  &--blog {
+    height: 75rem;
+  }
+  &--experience {
+    height: 65rem;
+    background-color: rgb(2, 186, 171);
     color: #ffffff;
   }
 }
@@ -31,11 +47,15 @@
   &--hero {
     font-size: 6rem;
     margin: 0.5rem 0;
-    color: rgb(2, 186, 171);;
+    color: rgb(2, 186, 171);
   }
   &--purchase {
     flex-basis: 70%;
     font-size: 2.2rem;
+  }
+  &--quote {
+    font-size: 2.4rem;
+    padding: 0 5rem;
   }
 }
 
@@ -43,11 +63,17 @@
   flex-basis: 100%;
   text-align: center;
   &--hero {
+    color: #cccccc;
     font-size: 5rem;
     margin: 0.5rem 0 3rem 0;
   }
   &--left-aligned {
     text-align: left;
+  }
+  &--quote {
+    color: rgb(2, 186, 171);
+    margin: 0;
+    text-transform: uppercase;
   }
 }
 
@@ -55,18 +81,35 @@
   text-align: center;
   padding: 1rem 5rem;
   &--left-aligned {
+    padding: 1rem 0;
     text-align: left;
   }
 }
 
 .section__span {
   display: block;
-  height: 0.5rem;
+  min-height: 0.5rem;
   width: 4rem;
   &--dark {
     background-color: gray;
   }
   &--light {
     background-color: #ffffff;
+  }
+}
+
+.section__text-box {
+  position: relative;
+  padding: 0 0 0 8rem;
+  align-items: flex-start;
+}
+
+.section__icon {
+  color: rgb(2, 186, 171);
+  font-size: 5rem;
+  &--absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 }
