@@ -31,4 +31,16 @@
       transition: 0.3s all;
     }
   }
+  &--profile {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    z-index: 10;
+    &:hover + .team-box__profile {
+      transition: 0.3s all;
+      bottom: 0;
+    }
+  }
 }

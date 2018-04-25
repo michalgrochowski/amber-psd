@@ -1,0 +1,30 @@
+.team-box {
+  position: relative;
+  height: 30rem;
+  @include bg-cover;
+  border: 2px solid #acacac;
+  overflow: hidden;
+  &--trump {
+    background-image: url("../img/trump.jpg");
+  }
+  &--ghandi {
+    background-image: url("../img/ghandi.jpg");
+  }
+  &--queen {
+    background-image: url("../img/queen.jpg");
+  }
+  &--kim {
+    background-image: url("../img/kim.jpg");
+  }
+}
+
+.team-box__profile {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: #ffffff;
+  transition: 0.3s all;
+  @include flex-center-column;
+}

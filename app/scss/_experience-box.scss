@@ -1,0 +1,35 @@
+.experience-box {
+
+}
+
+.experience-box__icon-outline {
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  width: 20rem;
+  height: 20rem;
+  @include flex-center-row;
+}
+
+.experience-box__icon-box {
+  background-color: #000000;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  @include flex-center-row;
+}
+
+.experience-box__icon {
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+.experience-box__title {
+  font-weight: normal;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.experience-box__text {
+  font-size: 2rem;
+  margin: 0;
+}

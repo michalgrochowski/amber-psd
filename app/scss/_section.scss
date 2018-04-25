@@ -3,37 +3,35 @@
   @include flex-center-row;
   flex-wrap: wrap;
   width: 100%;
+  padding: 5rem 0 7rem 0;
   &--hero {
     height: 100vh;
     background: linear-gradient(0deg, rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url("../img/mountains.jpg");
     @include bg-cover;
   }
   &--steal {
-    height: 40rem;
+    
   }
   &--latest-works {
-    height: 75rem;
     background-color: gray;
     color: #ffffff;
   }
   &--purchase {
-    height: 13rem;
+    padding: 0;
     flex-direction: row;
     background-color: rgb(2, 186, 171);
     color: #ffffff;
   }
   &--quote {
-    height: 45rem;
     background-color: gray;
     color: #ffffff;
     background: linear-gradient(0deg, rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url("../img/mountains2.jpg");
     @include bg-cover;
   }
   &--blog {
-    height: 75rem;
+    
   }
   &--experience {
-    height: 65rem;
     background-color: rgb(2, 186, 171);
     color: #ffffff;
   }
@@ -68,7 +66,10 @@
     margin: 0.5rem 0 3rem 0;
   }
   &--left-aligned {
+    margin: 0;
     text-align: left;
+    font-weight: normal;
+    font-size: 2.6rem;
   }
   &--quote {
     color: rgb(2, 186, 171);
@@ -81,6 +82,7 @@
   text-align: center;
   padding: 1rem 5rem;
   &--left-aligned {
+    margin: 0;
     padding: 1rem 0;
     text-align: left;
   }
@@ -89,9 +91,10 @@
 .section__span {
   display: block;
   min-height: 0.5rem;
-  width: 4rem;
+  width: 5rem;
+  margin: 2rem 0 3rem 0;
   &--dark {
-    background-color: gray;
+    background-color: #acacac;
   }
   &--light {
     background-color: #ffffff;
