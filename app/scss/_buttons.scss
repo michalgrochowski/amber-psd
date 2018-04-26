@@ -50,5 +50,8 @@
     &:hover .footer-lower__icon {
       color: #ffffff;
     }
+    @include mq-max($xs) {
+      margin-top: 2rem;
+    }
   }
 }

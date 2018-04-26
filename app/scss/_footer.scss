@@ -20,6 +20,9 @@
   &--popular {
     border-top: 1.5rem solid rgb(255,174,0);
   }
+  @include mq-max($xs) {
+    width: 100%;
+  }
 }
 
 .footer-column__box {
@@ -69,6 +72,10 @@
   width: 100%;
   padding: 0 4.5rem;
   margin-top: 3rem;
+  @include mq-max($xs) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer-lower__copyright {
@@ -79,6 +86,9 @@
   color: #ffffff;
   font-size: 1.4rem;
   margin: 0.2rem 0;
+  @include mq-max($xs) {
+    text-align: center;
+  }
 }
 
 .footer-lower__icon {

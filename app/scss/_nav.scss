@@ -20,6 +20,10 @@
 
 .nav__logo {
   border-bottom: none;
+  @include mq-max(850px) {
+      height: 100%;
+      width: auto;
+  }
 }
 
 .nav__list {
@@ -96,9 +100,10 @@
   &--start {
     margin-top: 0;
     margin-bottom: 0;
+    height: 5rem;
     @include mq-max(850px) {
       position: fixed;
-      top: 0.5rem;
+      top: 0;
       left: 1rem;
     }
   }
