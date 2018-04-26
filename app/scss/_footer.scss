@@ -25,6 +25,10 @@
 .footer-column__box {
   position: relative;
   padding: 0 0 0 2.5rem;
+  margin: 1.5rem 0;
+  &--no-padding {
+    padding: 0;
+  }
 }
 
 .footer-column__title {
@@ -35,12 +39,14 @@
 
 .footer-column__text {
   color: #bebebe;
-  font-size: 1.4rem;
-}
-
-.footer-column__alt-text {
-  color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  margin: 0.2rem 0;
+  &--lighter {
+    color: #ffffff;
+  }
+  &--hashtag {
+    color: rgb(2,186,171);
+  }
 }
 
 .footer-column__icon {

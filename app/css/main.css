@@ -651,7 +651,10 @@
 
 .footer-column__box {
   position: relative;
-  padding: 0 0 0 2.5rem; }
+  padding: 0 0 0 2.5rem;
+  margin: 1.5rem 0; }
+  .footer-column__box--no-padding {
+    padding: 0; }
 
 .footer-column__title {
   font-weight: normal;
@@ -660,11 +663,12 @@
 
 .footer-column__text {
   color: #bebebe;
-  font-size: 1.4rem; }
-
-.footer-column__alt-text {
-  color: #ffffff;
-  font-size: 1.4rem; }
+  font-size: 1.3rem;
+  margin: 0.2rem 0; }
+  .footer-column__text--lighter {
+    color: #ffffff; }
+  .footer-column__text--hashtag {
+    color: #02baab; }
 
 .footer-column__icon {
   position: absolute;
@@ -680,6 +684,80 @@
 
 .row--footer {
   padding: 0 3rem; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-decoration: none;
+  height: 3.5rem;
+  margin: 1rem 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+  .social:hover {
+    background-color: #32495a;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all; }
+
+.social__icon-box {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  background-color: white; }
+  .social__icon-box--facebook {
+    background-color: #3b5998; }
+  .social__icon-box--twitter {
+    background-color: #00a0d1; }
+  .social__icon-box--youtube {
+    background-color: #c4302b; }
+  .social__icon-box--instagram {
+    background-color: #825c48; }
+  .social__icon-box--pinterest {
+    background-color: #a30834; }
+
+.social__icon {
+  color: #ffffff;
+  font-size: 2.5rem; }
+
+.social__text {
+  font-size: 1.3rem;
+  color: #ffffff; }
 
 .button {
   border: 3px solid #02baab;
