@@ -2,7 +2,7 @@
   width: 100%;
   background-color: rgb(31,42,50);
   @include flex-center-row;
-  padding: 0 0 7rem 0;
+  padding: 0 0 2rem 0;
 }
 
 .footer-column {
@@ -61,6 +61,29 @@
   width: 100%;
   background-color: #ffffff;
   height: 10rem;
+}
+
+.footer-lower {
+  @include flex-center-row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 4.5rem;
+  margin-top: 3rem;
+}
+
+.footer-lower__copyright {
+
+}
+
+.footer-lower__text {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0.2rem 0;
+}
+
+.footer-lower__icon {
+  font-size: 1.5rem;
+  color: rgb(2, 186, 171);
 }
 
 .row--footer {
